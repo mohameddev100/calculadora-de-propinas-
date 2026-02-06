@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0f0;
+    min-height: 100vh;
+}
+
+.calc-propinas {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 10rem auto 0;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.calc-propinas h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.calc-propinas p {
+    color: #353535;
+    margin-bottom: 10px;
+}
+.calc-propinas label {
+    padding-block: 10px;
+}
+.calc-propinas input {
+    outline: none;
+    border: 1px solid #ccc;
+    padding: 7px;
+    border-radius: 7px;
+}
+
+.calc-propinas .btn {
+    border: none;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 80px;
+    border-radius: 7px;
+    background-color: green;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 300ms;
+    animation: jump 800ms linear infinite alternate-reverse;
+}
+.calc-propinas .btn:hover {
+    background-color: rgb(17, 145, 17);
+}
+
+
+@keyframes jump {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-5px);
+    }
+}
